@@ -180,6 +180,10 @@ defmodule AshPostgres.MixProject do
       "main" ->
         [git: "https://github.com/ash-project/ash.git"]
 
+      # can be removed once Ash 2.0 is closed
+      "2.0" ->
+        [git: "https://github.com/ash-project/ash.git", branch: "2.0"]
+
       version when is_binary(version) ->
         "~> #{version}"
 
